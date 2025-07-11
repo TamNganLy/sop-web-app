@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.main {
+  max-height: calc(100vh - 275px);; /* or any height that fits your layout */
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.move {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.action {
+  width: 100px;
+  background: linear-gradient(90deg, #f9572a, #ff9b05);
+  margin: 5px;
+  border-radius: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.action:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(90deg, #13158d, #1f456e);
+}

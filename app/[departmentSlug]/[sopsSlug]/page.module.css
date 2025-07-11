@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  height: calc(100vh - 112px);
+}
+
+.nav {
+  width: 25%;                /* Usually 1/4 of screen */
+  height: 100%;
+  max-width: 300px;          /* But never more than 100px */
+  padding: 1rem;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.main {
+  border-left: 1px solid #e5e7eb;
+  flex: 1;
+  padding: 1rem;
+  position: relative; 
+}
+
+.nav .item {
+  border-radius: 25px;
+  position: relative;
+}
+
+.link {
+  margin: 5px 0;
+  padding: 10px 20px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none; /* Optional: remove underline */
+  color: white;
+}
+
+.nav .item:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(90deg, #13158d, #1f456e);
+}
+
+.nav .itemActive {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(90deg, #f97316, #fcd34d);
+}
+
+/* Hide nav on small screens (e.g. < 640px wide) */
+@media (max-width: 640px) {
+  .nav {
+    display: none;
+  }
+
+  .main {
+    flex: 1 1 100%;
+  }
+}
