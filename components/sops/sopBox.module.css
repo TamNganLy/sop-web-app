@@ -1,39 +1,70 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-
-  gap: 1.5rem;
+  height: calc(100dvh - 112px);
+  gap: 1rem;
   border-radius: 1rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 4px 12px var(--box-shadow);
+}
+
+.detailBox {
+  background-color: #bef2ff;
+  border-left: 6px solid var(--pastel-blue);
+  padding: 1rem 1rem;
+  border-radius: 0.5rem;
+  color: var(--mpcm-light-blue);
+  font-size: 1rem;
+  line-height: 1.6;
+  box-shadow: 0 2px 4px var(--box-shadow);
 }
 
 .main {
-  max-height: calc(100vh - 275px);; /* or any height that fits your layout */
+  flex-grow: 1;
   overflow-y: auto;
   padding-right: 0.5rem;
+  height: fit-content;
 }
 
 .move {
   display: flex;
   justify-content: space-between;
-  position: absolute;
+  position: sticky;
   bottom: 0;
   left: 0;
   right: 0;
   padding: 1rem;
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid var(--border-color);
 }
 
 .action {
   width: 100px;
-  background: linear-gradient(90deg, #f9572a, #ff9b05);
+  background: linear-gradient(90deg, var(--mpcm-light-blue), var(--pastel-blue));
   margin: 5px;
   border-radius: 20px;
   padding: 5px;
   cursor: pointer;
+  color: var(--background);
 }
 
 .action:hover {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
-  background: linear-gradient(90deg, #13158d, #1f456e);
+  box-shadow: 0 4px 6px var(--border-color);
+  background: linear-gradient(90deg, var(--orange), var(--yellow));
+}
+
+.main::-webkit-scrollbar {
+  width: 8px;
+}
+
+.main::-webkit-scrollbar-track {
+  background: var(--background);
+  border-radius: 10px;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background: var(--pastel-blue);
+  border-radius: 10px;
+}
+
+.main::-webkit-scrollbar-thumb:hover {
+  background: var(--mpcm-light-blue);
 }

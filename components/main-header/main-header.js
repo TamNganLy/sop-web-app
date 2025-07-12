@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import logoImg from "@/assets/logo/logo-mpcm.png";
+import logoImg from "@/assets/logo/logo-tl.png";
 import classes from "./main-header.module.css";
 import NavLink from "./nav-link";
 

@@ -5,9 +5,9 @@
   padding: 1rem 1rem;
   background: linear-gradient(
     to right,
-    var(--mpcm-blue) 0%,
-    var(--mpcm-light-blue) 25%,
-    black 100%
+    var(--mpcm-light-blue) 0%,
+    var(--mpcm-blue) 25%,
+    var(--foreground) 100%
   );
 }
 
@@ -28,7 +28,7 @@
 }
 
 .nav li {
-  color: black;
+  color: var(--foreground);
 }
 
 .logo {
@@ -37,7 +37,7 @@
   justify-content: center;
   gap: 2rem;
   text-decoration: none;
-  color: #ddd6cb;
+  color: var(--border-color);
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.15rem;
@@ -49,5 +49,5 @@
   width: 25rem;
   height: 5rem;
   object-fit: contain;
-  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 0 0.75rem var(--box-shadow));
 }

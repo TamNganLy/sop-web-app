@@ -18,7 +18,7 @@ export default function SOPBox({ props, sop, className }) {
 
   return (
     <div className={classes.wrapper}>
-      <div>
+      <div className={classes.detailBox}>
         <h1>{sop.detail}</h1>
       </div>
       <div className={classes.main}>

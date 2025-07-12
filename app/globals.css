@@ -4,8 +4,15 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --mpcm-light-blue: #00008b;
   --mpcm-blue: #00008b;
+  --mpcm-light-blue: #1f456e;
+  --pastel-blue: rgb(93, 152, 219);
+  --orange: #f97316;
+  --yellow: #fcd34d;
+  --light-yellow: #f9b241;
+  --border-color: #ddd6cb;
+  --box-shadow: rgba(0, 0, 0, 0.08);
+  --gray: #837f78;
 }
 
 * {

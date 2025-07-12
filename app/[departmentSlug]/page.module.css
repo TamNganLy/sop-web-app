@@ -7,7 +7,7 @@
 .title {
   font-size: 2rem;
   font-weight: 700;
-  color: #ffffff; /* Tailwind's gray-800 */
+  color: var(--background);
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -19,38 +19,38 @@
 }
 
 .item {
-  background-color: #0e0d0d;
-  border: 1px solid #575757; /* Tailwind's gray-200 */
+  background-color: var(--foreground);
+  border: 1px solid var(--gray);
   border-radius: 0.75rem;
   padding: 1rem;
   margin-bottom: 1rem;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 2px var(--box-shadow);
   transition: all 0.2s ease-in-out;
 }
 
 .item:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
-  background: linear-gradient(90deg, #f97316, #fcd34d);
+  background: linear-gradient(90deg, var(--orange), var(--yellow));
   transform: scale(1.025);
 }
 
 .itemTitle {
   font-size: 1.25rem;
   font-weight: 600;
-  color: #2563eb; /* Tailwind's blue-600 */
+  color: var(--pastel-blue);
   margin: 0 0 0.25rem 0;
 }
 
 .itemDetail {
   font-size: 0.875rem;
-  color: #6b7280; /* Tailwind's gray-600 */
+  color: var(--gray);
   margin: 0;
 }
 
 .item:hover .itemTitle {
-  color: #ffffff;
+  color: var(--background);
 }
 
 .item:hover .itemDetail {
-  color: #ffffff;
+  color: var(--background);
 }

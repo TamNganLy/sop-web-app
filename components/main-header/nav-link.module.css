@@ -1,6 +1,6 @@
 .link {
   text-decoration: none;
-  color: rgb(93, 152, 219);
+  color: var(--pastel-blue);
   font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;

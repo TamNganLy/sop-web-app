@@ -1,11 +1,11 @@
 .text {
   font-size: 1rem;
   line-height: 1.8;
-  color: #ffffff; /* gray-700 */
+  color: var(--background);
   white-space: pre-line;
   padding: 1rem;
-  border-left: 4px solid #fb923c; /* accent color */
-  border-bottom: 4px solid #fb923c; /* accent color */
+  border-left: 4px solid var(--pastel-blue);
+  border-bottom: 4px solid var(--pastel-blue);
   border-radius: 1rem;
   margin-bottom: 1rem;
 }
@@ -14,6 +14,6 @@
   display: block;
   justify-self: center;
   border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 8px 16px var(--box-shadow);
   
 }

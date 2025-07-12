@@ -12,8 +12,8 @@ export default function Home() {
         </div>
         <div>
           <div className={classes.hero}>
-            <h1>MPCM SOP Webpage</h1>
-            <p>{"MPCM’s platform for streamlined, standardized SOP management."}</p>
+            <h1>SOP Webpage</h1>
+            <p>{"The platform for streamlined, standardized SOP management."}</p>
           </div>
           <div className={classes.cta}>
             <Link href="/">SOP Management</Link>

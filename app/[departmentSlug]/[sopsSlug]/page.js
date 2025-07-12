@@ -2,6 +2,7 @@ import Link from "next/link";
 import classes from "./page.module.css";
 import { DUMMY_SOP } from "@/data/data";
 import SOPBox from "@/components/sops/sopBox";
+import { notFound } from "next/navigation";
 
 export default async function Sop({ params }) {
   const param = (await params).sopsSlug;
@@ -9,6 +10,11 @@ export default async function Sop({ params }) {
   const departmentID = DUMMY_SOP.find((s) => s.slug === param)?.depId;
   const sops = DUMMY_SOP.filter((sop) => sop.depId === departmentID);
   const sop = DUMMY_SOP.find((sop) => sop.slug === param);
+
+  if (sop.sop.length === 0) {
+    notFound();
+  }
+
   return (
     <div className={classes.container}>
       <ul className={classes.nav}>
